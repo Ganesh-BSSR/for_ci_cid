@@ -10,5 +10,5 @@ jobs:
         uses: actions/setup-node@v3
       - name: Install Dependencies
         run: npm ci
-      - name: Start Server
-        run: npm run start
+      - name: Testing
+        run: npm run test
