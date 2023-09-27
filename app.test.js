@@ -2,6 +2,7 @@ const chai = require('chai')
 const chaiHttp = require('chai-http')
 const mocha = require('mocha')
 const app = require('./index')
+const process = require('process')
 chai.use(chaiHttp)
 const expect = chai.expect
 
@@ -33,6 +34,7 @@ describe('User API', () => {
         .end((err, res) => {
           if (err) {
             expect(res).to.have.status(400)
+            process.exit(1)
           } else {
             expect(res).to.have.status(200)
             expect(res.body)
