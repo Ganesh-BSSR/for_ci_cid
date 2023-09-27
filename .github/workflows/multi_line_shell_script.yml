@@ -1,13 +1,11 @@
-name: Multiline-Shell-Script
+name: First workflow
 on: workflow_dispatch
-jobs:
-  multi-line:
-    runs-on: ububtu-latest
-    steps:
-      - name: Multiline executor
-        run: | 
-            echo "Hi Welcome"
-            echo "Today's Date: $(date)"
-            echo "This is the right time of doing things"
-      
+jobs: 
+  first_job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Welcome Message
+        run: |
+            echo "Hello World"
+            echo "Welcome"
         
