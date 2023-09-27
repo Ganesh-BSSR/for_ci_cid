@@ -7,5 +7,5 @@ jobs:
       - name: Welcome Message
         run: |
             echo "Hello World"
-            echo "Welcome"
+            echo "Welcome to: $(date)"
         
