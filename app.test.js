@@ -6,7 +6,7 @@ chai.use(chaiHttp)
 const expect = chai.expect
 
 describe('User API', () => {
-  describe('POST /login', () => {
+  describe('POST Request /login', () => {
     it('Should handle user login', (done) => {
       chai
         .request(app)
