@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha --timeout 10000 app.test.js"
+    "test": "mocha --timeout 10000 app.test.js --exit"
   },
   "dependencies": {
     "express": "*"
