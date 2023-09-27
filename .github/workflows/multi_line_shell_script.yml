@@ -1,4 +1,4 @@
-name: First workflow
+name: Mulitline Script Executor
 on: workflow_dispatch
 jobs: 
   first_job:
