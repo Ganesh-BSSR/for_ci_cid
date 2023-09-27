@@ -1,0 +1,13 @@
+name: Multiline-Shell-Script
+on: workflow_dispatch
+jobs:
+  multi-line:
+    runs-on: ububtu-latest
+    steps:
+      - name: Multiline executor
+        run: | 
+            echo "Hi Welcome"
+            echo "Today's Date: $(date)"
+            echo "This is the right time of doing things"
+      
+        
