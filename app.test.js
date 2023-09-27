@@ -29,7 +29,7 @@ describe('User API', () => {
       chai
         .request(app)
         .post('/login')
-        .send({ username: 'Ganesh', password: 'Ganes' })
+        .send({ username: 'Ganesh', password: 'Ganesh' })
         .end((err, res) => {
           if (err) {
             expect(res).to.have.status(400)
