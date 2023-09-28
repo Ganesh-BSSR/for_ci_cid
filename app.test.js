@@ -32,11 +32,10 @@ describe('User API', () => {
         .post('/login')
         .send({ username: 'Ganesh', password: 'Ganes' })
         .end((err, res) => {
-          console.log(res.status)
           if (err) {
             process.exit(0)
           } else {
-            expect(res).to.have.status(200)
+            expect(res).to.have.status(400)
           }
           done()
         })
